@@ -1,0 +1,29 @@
+.link {
+    text-decoration: none;
+    color: black;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.responsiveMap {
+    overflow: hidden;
+    height: 0;
+    padding-bottom: 30%;
+    position: relative;
+}
+
+.responsiveMap iframe {
+    border: 0;
+    height: 90%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+
+.contactContainer {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
