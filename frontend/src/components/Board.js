@@ -20,7 +20,7 @@ function Board(props) {
   return (
     data.map((group, ind) => (
 
-      <div id={ind}>
+      <div id={`group-${`${group.name}-${ind}-${props.id}`}`}>
         <h2>
           <span className='badge border text-light position-absolute translate-middle start-50 bg-dark opacity-100'>{group.name}</span>
         </h2>
@@ -29,7 +29,7 @@ function Board(props) {
             group && group.value &&
 
             group.value.map((ele, index) => (
-              <div className="col-sm" id={index}>
+              <div className="col-sm" id={`${ele.id}-${index}-${props.id}`}>
                 <div className="card mb-3">
                   <img src={ele.image} className="card-image-top " alt="Not available" />
                   <div className="card-body">

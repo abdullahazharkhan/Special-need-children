@@ -12,28 +12,28 @@ function Navbar() {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <NavLink className="nav-link" aria-current="page" to="/" activeClassName="active">Home</NavLink>
+              <NavLink className={({isActive}) => `nav-link ${isActive ? 'active' : ''}`} aria-current="page" to="/" >Home</NavLink>
             </li>
             <li className="nav-item dropdown">
-              <NavLink className="nav-link dropdown-toggle" to="/about" role="button" data-bs-toggle="dropdown" aria-expanded="false" activeClassName="active">
+              <NavLink className={({isActive}) => `nav-link dropdown-toggle ${isActive ? 'active' : ''}` } to="/about" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
                 Project Spectrum
               </NavLink>
               <ul className="dropdown-menu">
-                <li><NavLink className="dropdown-item" to="/autism">Autism</NavLink></li>
-                <li><NavLink className="dropdown-item" to="/adhd">ADHD</NavLink></li>
-                <li><NavLink className="dropdown-item" to="/dyslexia">Dyslexia</NavLink></li>
-                <li><NavLink className="dropdown-item" to="/downsyndrome">Downsyndrome</NavLink></li>
+                <li><NavLink className={({isActive}) => `dropdown-item ${isActive ? 'active' : ''}`} to="/autism">Autism</NavLink></li>
+                <li><NavLink className={({isActive}) => `dropdown-item ${isActive ? 'active' : ''}`} to="/adhd">ADHD</NavLink></li>
+                <li><NavLink className={({isActive}) => `dropdown-item ${isActive ? 'active' : ''}`} to="/dyslexia">Dyslexia</NavLink></li>
+                <li><NavLink className={({isActive}) => `dropdown-item ${isActive ? 'active' : ''}`} to="/downsyndrome">Downsyndrome</NavLink></li>
                 <li><hr className="dropdown-divider" /></li>
               </ul>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/projects" activeClassName="active">Our Projects</NavLink>
+              <NavLink className={({isActive}) => `nav-link ${isActive ? 'active' : ''}`} to="/projects" >Our Projects</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/people" activeClassName="active">People</NavLink>
+              <NavLink className={({isActive}) => `nav-link ${isActive ? 'active' : ''}`} to="/people" >People</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/contactUs" activeClassName="active">Contact Us</NavLink>
+              <NavLink className={({isActive}) => `nav-link ${isActive ? 'active' : ''}`} to="/contactUs" >Contact Us</NavLink>
             </li>
 
           </ul>

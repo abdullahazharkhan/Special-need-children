@@ -4,7 +4,7 @@ function DemoVideo({ video }) {
     return (
         <div className="container text-center my-5">
             <p>
-                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#video-container" aria-expanded="false" aria-controls="video-container">
+                <button className="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#video-container" aria-expanded="false" aria-controls="video-container">
                     Demo Video
                 </button>
             </p>
