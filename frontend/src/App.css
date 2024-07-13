@@ -4,6 +4,7 @@
 
 .navbar{
   background-color: rgba(0, 0, 0, 0.2);
+  transition: all 0.5s ease-in-out;
 }
 
 .navbar:hover{
@@ -18,9 +19,7 @@
 }
 
 .nav-item:hover {
-  background-color: rgb(180, 177, 173);
-  color: whitesmoke;
-  border-bottom: #282c34 solid 1px;
+  border-top: #282c34 solid 1px;
   transition: all 0.5s ease-in-out;
 }
 

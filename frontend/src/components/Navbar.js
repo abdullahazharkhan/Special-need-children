@@ -1,11 +1,26 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { NavLink } from "react-router-dom"
 
 function Navbar() {
+
+  const [backColor,setBackColor] = useState('bg-transparent')
+  
+  const checkScroll = () => {
+    if(window.scrollY > 50) setBackColor('');
+    else setBackColor('bg-transparent');
+  }
+
+  useEffect(()=>{
+    window.addEventListener('scroll',checkScroll);
+    return () => {window.removeEventListener('scroll',checkScroll)}
+    // eslint-disable-next-line
+  },[]);
+  
   return (
-    <nav className="navbar navbar-expand-lg sticky-top">
-      <NavLink className='navbar-brand mx-2' to='/'>Bridge of Hope</NavLink>
+    <nav className={`navbar navbar-expand-lg sticky-top ${backColor}`}>
       <div className="container-fluid" >
+        <img className='navbar-brand rounded-circle p-0 m-0' src={process.env.PUBLIC_URL + '/icon/favicon-32x32.png'} alt=''></img>
+        <NavLink className='navbar-brand mx-2' to='/'>Bridge of Hope</NavLink>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
