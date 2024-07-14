@@ -11,7 +11,7 @@ function Home() {
 
     return (
         <div style={{ height: "600px",position:'absolute',top:'0',width:'100%' }} >
-
+            
             <div id="divForCarousel" className="carousel slide" data-bs-ride="carousel" data-bs-pause="false" ref={carouselRef}>
                 <div className='introducer me-4'>
                     <h1 style={{fontSize:'3em'}}> Application for special need children </h1>

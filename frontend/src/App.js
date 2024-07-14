@@ -8,7 +8,7 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Routes>
-          {/* <Route path="/" element={<Home />} /> */}
+          <Route path="/" element={<Home />} />
           <Route path="/adhd" element={<Adhd />} />
           <Route path="/autism" element={<Autism />} />
           <Route path="/downsyndrome" element={<Downsyndrome />} />
