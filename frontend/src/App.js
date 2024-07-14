@@ -8,7 +8,7 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Routes>
-          <Route path="/" element={<Home />} />
+          {/* <Route path="/" element={<Home />} /> */}
           <Route path="/adhd" element={<Adhd />} />
           <Route path="/autism" element={<Autism />} />
           <Route path="/downsyndrome" element={<Downsyndrome />} />
@@ -18,7 +18,7 @@ function App() {
             <Route path='aiTeam' element={<Board id='aiTeam' />} />
             <Route path='devTeam' element={<Board id='devTeam' />} />
           </Route>
-          <Route path="/contactUs" element={<ContactUs />} />
+          <Route path="/contact" element={<ContactUs />} />
         </Routes>
       </BrowserRouter>
 
