@@ -6,7 +6,7 @@ const Home = () => {
       <div className="h-screen bg-themeLGreen flex justify-center items-center">
         <div className="text-center text-6xl sm:text-7xl text-themeDGreen font-extrabold leading-[70px] mt-8 mx-3">
           The <br />
-          Bridge of <br />
+          bridge of <br />
           <span className="text-themeOrange underline-offset-8 underline decoration-themeDGreen text-7xl sm:text-8xl">
             Hopes
           </span>
@@ -83,6 +83,85 @@ const Home = () => {
                 creative thinking, benefiting from tailored educational
                 strategies and supportive learning environments.
               </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="p-3 py-5">
+        <h1 className="text-center text-5xl font-bold text-themeOrange">
+          Our Amazing{" "}
+          <span className="underline underline-offset-8 decoration-themeDGreen decoration-8">
+            Achievers
+          </span>
+        </h1>
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mt-10 max-w-5xl mx-auto">
+          <div class="grid gap-3">
+            <div>
+              <img
+                class="h-auto max-w-full rounded-2xl"
+                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                class="h-auto max-w-full rounded-2xl"
+                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                class="h-auto max-w-full rounded-2xl"
+                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="grid gap-3">
+            <div>
+              <img
+                class="h-auto max-w-full rounded-2xl"
+                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                class="h-auto max-w-full rounded-2xl"
+                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                class="h-auto max-w-full rounded-2xl"
+                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="grid gap-4">
+            <div>
+              <img
+                class="h-auto max-w-full rounded-2xl"
+                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                class="h-auto max-w-full rounded-2xl"
+                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                class="h-auto max-w-full rounded-2xl"
+                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-8.jpg"
+                alt=""
+              />
             </div>
           </div>
         </div>
