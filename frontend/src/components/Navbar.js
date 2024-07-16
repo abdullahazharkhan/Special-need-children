@@ -39,7 +39,7 @@ const Navbar = () => {
     };
   }, []);
   return (
-    <nav className="w-full sticky z-50 md:flex-row flex-col md:h-16 bg-themeDGreen flex justify-around items-center md:items-stretch gap-2 sm:gap-4 font-poppins p-2 shadow-sm">
+    <nav className="w-full fixed z-50 md:flex-row flex-col md:h-16 bg-themeDGreen flex justify-around items-center md:items-stretch gap-2 sm:gap-4 font-poppins p-2 shadow-sm">
       <Link
         to={"/"}
         className="logo rounded-full w-24 h-24 cursor-pointer mt-1 border-2 border-themeOrange"
