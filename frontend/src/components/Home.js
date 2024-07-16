@@ -3,6 +3,7 @@ import React from "react";
 const Home = () => {
   return (
     <>
+      {/* hero section */}
       <div className="h-screen bg-themeLGreen flex justify-center items-center">
         <div className="text-center text-6xl sm:text-7xl text-themeDGreen font-extrabold leading-[70px] mt-8 mx-3">
           The <br />
@@ -15,6 +16,9 @@ const Home = () => {
           </span>
         </div>
       </div>
+      {/* hero section ends*/}
+
+      {/* our mission */}
       <div className="p-3 py-5">
         <h1 className="text-center text-5xl font-bold text-themeOrange">
           Our{" "}
@@ -30,6 +34,9 @@ const Home = () => {
           </p>
         </div>
       </div>
+      {/* our mission ends*/}
+
+      {/* Ai for children */}
       <div className="p-3 py-5 bg-themeLGreen">
         <h1 className="text-center text-5xl font-bold text-themeOrange">
           AI For The{" "}
@@ -87,6 +94,9 @@ const Home = () => {
           </div>
         </div>
       </div>
+      {/* Ai for children ends*/}
+
+      {/* our amazing achievers */}
       <div className="p-3 py-5">
         <h1 className="text-center text-5xl font-bold text-themeOrange">
           Our Amazing{" "}
@@ -94,7 +104,7 @@ const Home = () => {
             Achievers
           </span>
         </h1>
-        <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mt-10 max-w-5xl mx-auto">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-10 max-w-5xl mx-auto">
           <div class="grid gap-3">
             <div>
               <img
@@ -141,7 +151,7 @@ const Home = () => {
               />
             </div>
           </div>
-          <div class="grid gap-4">
+          <div class="grid gap-3">
             <div>
               <img
                 class="h-auto max-w-full rounded-2xl"
@@ -164,8 +174,32 @@ const Home = () => {
               />
             </div>
           </div>
+          <div class="grid gap-3">
+            <div>
+              <img
+                class="h-auto max-w-full rounded-2xl"
+                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                class="h-auto max-w-full rounded-2xl"
+                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                class="h-auto max-w-full rounded-2xl"
+                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg"
+                alt=""
+              />
+            </div>
+          </div>
         </div>
       </div>
+      {/* our amazing achievers ends*/}
     </>
   );
 };
