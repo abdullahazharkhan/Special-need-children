@@ -16,15 +16,75 @@ const Home = () => {
         </div>
       </div>
       <div className="p-3 py-5">
-        <h1 className="text-center text-5xl font-bold text-themeOrange underline underline-offset-8 decoration-themeDGreen decoration-8">
-          Mission
+        <h1 className="text-center text-5xl font-bold text-themeOrange">
+          Our{" "}
+          <span className="underline underline-offset-8 decoration-themeDGreen decoration-8">
+            Mission
+          </span>
         </h1>
         <div className="sm:w-2/3 md:1/2 mx-auto text-center text-2xl font-semibold">
           <p className="mt-5 ">
             Empowering special needs education through innovative{" "}
-            <span className="text-themeDGreen"> AI-driven </span> digital solutions, fostering inclusion and
-            growth for all.
+            <span className="text-themeDGreen"> AI-driven </span> digital
+            solutions, fostering inclusion and growth for all.
           </p>
+        </div>
+      </div>
+      <div className="p-3 py-5 bg-themeLGreen">
+        <h1 className="text-center text-5xl font-bold text-themeOrange">
+          AI For The{" "}
+          <span className="underline underline-offset-8 decoration-themeDGreen decoration-8">
+            Children
+          </span>{" "}
+          With
+        </h1>
+        <div className="mt-10 max-w-5xl mx-auto flex flex-col gap-3">
+          <div className="flex flex-col sm:flex-row flex-wrap gap-3 justify-between w-full">
+            <div className="rounded-2xl bg-themeWhite flex-1 p-4 text-center">
+              <h1 className="text-2xl font-semibold text-themeDGreen">
+                Autism
+              </h1>
+              <p>
+                Children with autism often experience challenges in social
+                interaction, communication, and exhibit repetitive behaviors.
+                They may have unique strengths, such as exceptional memory or
+                attention to detail.
+              </p>
+            </div>
+            <div className="rounded-2xl bg-themeWhite flex-1 p-4 text-center">
+              <h1 className="text-2xl font-semibold text-themeDGreen">ADHD</h1>
+              <p>
+                Children with ADHD may struggle with inattention, hyperactivity,
+                and impulsiveness. They often benefit from structured
+                environments and can be highly creative and energetic, thriving
+                in engaging, dynamic activities.
+              </p>
+            </div>
+          </div>
+          <div className="flex flex-col sm:flex-row flex-wrap gap-3 justify-between w-full">
+            <div className="rounded-2xl bg-themeWhite flex-1 p-4 text-center">
+              <h1 className="text-2xl font-semibold text-themeDGreen">
+                Cerebral Palsy
+              </h1>
+              <p>
+                Children with cerebral palsy have motor impairments that affect
+                movement and coordination. They often demonstrate resilience and
+                determination, benefiting from therapies that enhance mobility
+                and support independence.
+              </p>
+            </div>
+            <div className="rounded-2xl bg-themeWhite flex-1 p-4 text-center">
+              <h1 className="text-2xl font-semibold text-themeDGreen">
+                Dyslexia
+              </h1>
+              <p>
+                Children with dyslexia face difficulties with reading, spelling,
+                and writing. They often have strong problem-solving skills and
+                creative thinking, benefiting from tailored educational
+                strategies and supportive learning environments.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </>
