@@ -122,26 +122,26 @@ const Home = () => {
             Achievers
           </span>
         </h1>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-10 max-w-5xl mx-auto">
+        <div class="grid grid-cols-2 gap-4 mt-10 max-w-5xl mx-auto">
           <div class="grid gap-3">
             <div>
               <img
                 class="h-auto max-w-full rounded-2xl"
-                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg"
+                src="https://www.childrensmn.org/assets/img/istock-1165345367-resize.png"
                 alt=""
               />
             </div>
             <div>
               <img
                 class="h-auto max-w-full rounded-2xl"
-                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg"
+                src="https://www.michiganallianceforfamilies.org/wp-content/uploads/2023/08/MAF-autism.png"
                 alt=""
               />
             </div>
             <div>
               <img
                 class="h-auto max-w-full rounded-2xl"
-                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg"
+                src="https://raisingchildren.net.au/__data/assets/image/0029/47738/adhd.jpg"
                 alt=""
               />
             </div>
@@ -150,67 +150,21 @@ const Home = () => {
             <div>
               <img
                 class="h-auto max-w-full rounded-2xl"
-                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg"
+                src="https://stjudes.com.au/wp-content/uploads/2022/10/The-Strengths-of-A-Child-With-Autism.jpg"
                 alt=""
               />
             </div>
             <div>
               <img
                 class="h-auto max-w-full rounded-2xl"
-                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg"
+                src="https://www.michiganallianceforfamilies.org/wp-content/uploads/2023/08/MAF-autism.png"
                 alt=""
               />
             </div>
             <div>
               <img
                 class="h-auto max-w-full rounded-2xl"
-                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg"
-                alt=""
-              />
-            </div>
-          </div>
-          <div class="grid gap-3">
-            <div>
-              <img
-                class="h-auto max-w-full rounded-2xl"
-                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg"
-                alt=""
-              />
-            </div>
-            <div>
-              <img
-                class="h-auto max-w-full rounded-2xl"
-                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg"
-                alt=""
-              />
-            </div>
-            <div>
-              <img
-                class="h-auto max-w-full rounded-2xl"
-                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-8.jpg"
-                alt=""
-              />
-            </div>
-          </div>
-          <div class="grid gap-3">
-            <div>
-              <img
-                class="h-auto max-w-full rounded-2xl"
-                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg"
-                alt=""
-              />
-            </div>
-            <div>
-              <img
-                class="h-auto max-w-full rounded-2xl"
-                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg"
-                alt=""
-              />
-            </div>
-            <div>
-              <img
-                class="h-auto max-w-full rounded-2xl"
-                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg"
+                src="https://orthopedicapplianceco.com/media/k2/items/cache/c889234799e865bbe90cee71f6cd2e53_XL.jpg"
                 alt=""
               />
             </div>
@@ -231,7 +185,6 @@ const Home = () => {
           <Carousel
             swipeable={true}
             draggable={true}
-            showDots={false}
             responsive={responsive}
             infinite={true}
             // autoPlay={this.props.deviceType !== "mobile" ? true : false}
@@ -242,8 +195,7 @@ const Home = () => {
             containerClass="carousel-container"
             removeArrowOnDeviceType={["tablet", "mobile"]}
             // deviceType={this.props.deviceType}
-            dotListClass="custom-dot-list-style"
-            itemClass="carousel-item-padding-40-px px-2"
+            itemClass="px-2"
           >
             <div className="flex flex-col items-center mx-12 lg:mx-0 bg-themeLGreen p-5 rounded-2xl">
               <div className="relative text-center">
@@ -252,7 +204,7 @@ const Home = () => {
                   width="24"
                   height="24"
                   fill="#FFB534"
-                  className="absolute top-0 left-0 w-8 h-8 text-gray-300 rotate-180"
+                  className="absolute -top-4 -left-2 w-8 h-8 text-gray-300 rotate-180"
                   viewBox="0 0 24 24"
                 >
                   <path d="M9.983 3v7.391c0 5.704-3.731 9.57-8.983 10.609l-.995-2.151c2.432-.917 3.995-3.638 3.995-5.849h-4v-10h9.983zm14.017 0v7.391c0 5.704-3.748 9.571-9 10.609l-.996-2.151c2.433-.917 3.996-3.638 3.996-5.849h-3.983v-10h9.983z" />
@@ -273,7 +225,7 @@ const Home = () => {
                   width="24"
                   height="24"
                   fill="#FFB534"
-                  className="absolute top-0 left-0 w-8 h-8 text-gray-300 rotate-180"
+                  className="absolute -top-4 -left-2 w-8 h-8 text-gray-300 rotate-180"
                   viewBox="0 0 24 24"
                 >
                   <path d="M9.983 3v7.391c0 5.704-3.731 9.57-8.983 10.609l-.995-2.151c2.432-.917 3.995-3.638 3.995-5.849h-4v-10h9.983zm14.017 0v7.391c0 5.704-3.748 9.571-9 10.609l-.996-2.151c2.433-.917 3.996-3.638 3.996-5.849h-3.983v-10h9.983z" />
@@ -294,7 +246,7 @@ const Home = () => {
                   width="24"
                   height="24"
                   fill="#FFB534"
-                  className="absolute top-0 left-0 w-8 h-8 text-gray-300 rotate-180"
+                  className="absolute -top-4 -left-2 w-8 h-8 text-gray-300 rotate-180"
                   viewBox="0 0 24 24"
                 >
                   <path d="M9.983 3v7.391c0 5.704-3.731 9.57-8.983 10.609l-.995-2.151c2.432-.917 3.995-3.638 3.995-5.849h-4v-10h9.983zm14.017 0v7.391c0 5.704-3.748 9.571-9 10.609l-.996-2.151c2.433-.917 3.996-3.638 3.996-5.849h-3.983v-10h9.983z" />
@@ -315,7 +267,7 @@ const Home = () => {
                   width="24"
                   height="24"
                   fill="#FFB534"
-                  className="absolute top-0 left-0 w-8 h-8 text-gray-300 rotate-180"
+                  className="absolute -top-4 -left-2 w-8 h-8 text-gray-300 rotate-180"
                   viewBox="0 0 24 24"
                 >
                   <path d="M9.983 3v7.391c0 5.704-3.731 9.57-8.983 10.609l-.995-2.151c2.432-.917 3.995-3.638 3.995-5.849h-4v-10h9.983zm14.017 0v7.391c0 5.704-3.748 9.571-9 10.609l-.996-2.151c2.433-.917 3.996-3.638 3.996-5.849h-3.983v-10h9.983z" />
