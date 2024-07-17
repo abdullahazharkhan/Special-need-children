@@ -1,3 +1,11 @@
+html {
+  scroll-snap-type: y mandatory;
+} 
+
+.section {
+  scroll-snap-align: start;
+}
+
 .container-fluid {
   max-height: 100%;
 }
@@ -43,3 +51,4 @@
   height: 600px;
   filter:blur(1px) brightness(0.8) contrast(1.2);
 }
+

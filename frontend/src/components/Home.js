@@ -1,6 +1,27 @@
 import React from "react";
-
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 const Home = () => {
+  const responsive = {
+    superLargeDesktop: {
+      // the naming can be any, depends on you.
+      breakpoint: { max: 4000, min: 3000 },
+      items: 5,
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 3,
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2,
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+    },
+  };
+
   return (
     <>
       {/* hero section */}
@@ -17,7 +38,6 @@ const Home = () => {
         </div>
       </div>
       {/* hero section ends*/}
-
       {/* our mission */}
       <div className="p-3 py-5">
         <h1 className="text-center text-5xl font-bold text-themeOrange">
@@ -35,7 +55,6 @@ const Home = () => {
         </div>
       </div>
       {/* our mission ends*/}
-
       {/* Ai for children */}
       <div className="p-3 py-5 bg-themeLGreen">
         <h1 className="text-center text-5xl font-bold text-themeOrange">
@@ -95,7 +114,6 @@ const Home = () => {
         </div>
       </div>
       {/* Ai for children ends*/}
-
       {/* our amazing achievers */}
       <div className="p-3 py-5">
         <h1 className="text-center text-5xl font-bold text-themeOrange">
@@ -200,6 +218,121 @@ const Home = () => {
         </div>
       </div>
       {/* our amazing achievers ends*/}
+
+      {/* testimonials section */}
+      <div className="p-3 py-5">
+        <h1 className="text-center text-5xl font-bold text-themeOrange">
+          Stories of{" "}
+          <span className="underline underline-offset-8 decoration-themeDGreen decoration-8">
+            Hope
+          </span>
+        </h1>
+        <div className="mt-10 max-w-5xl mx-auto flex flex-col gap-3">
+          <Carousel
+            swipeable={true}
+            draggable={true}
+            showDots={false}
+            responsive={responsive}
+            infinite={true}
+            // autoPlay={this.props.deviceType !== "mobile" ? true : false}
+            autoPlaySpeed={1000}
+            keyBoardControl={true}
+            customTransition="all .5"
+            transitionDuration={1000}
+            containerClass="carousel-container"
+            removeArrowOnDeviceType={["tablet", "mobile"]}
+            // deviceType={this.props.deviceType}
+            dotListClass="custom-dot-list-style"
+            itemClass="carousel-item-padding-40-px px-2"
+          >
+            <div className="flex flex-col items-center mx-12 lg:mx-0 bg-themeLGreen p-5 rounded-2xl">
+              <div className="relative text-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="#FFB534"
+                  className="absolute top-0 left-0 w-8 h-8 text-gray-300 rotate-180"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M9.983 3v7.391c0 5.704-3.731 9.57-8.983 10.609l-.995-2.151c2.432-.917 3.995-3.638 3.995-5.849h-4v-10h9.983zm14.017 0v7.391c0 5.704-3.748 9.571-9 10.609l-.996-2.151c2.433-.917 3.996-3.638 3.996-5.849h-3.983v-10h9.983z" />
+                </svg>
+                <p className="px-6 py-1 text-lg italic">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Voluptatibus quibusdam, eligendi exercitationem molestias
+                  possimus facere.
+                </p>
+              </div>
+              <span className="w-12 h-1 my-2 rounded-lg bg-themeOrange"></span>
+              <p>John Doe</p>
+            </div>
+            <div className="flex flex-col items-center mx-12 lg:mx-0 bg-themeLGreen p-5 rounded-2xl">
+              <div className="relative text-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="#FFB534"
+                  className="absolute top-0 left-0 w-8 h-8 text-gray-300 rotate-180"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M9.983 3v7.391c0 5.704-3.731 9.57-8.983 10.609l-.995-2.151c2.432-.917 3.995-3.638 3.995-5.849h-4v-10h9.983zm14.017 0v7.391c0 5.704-3.748 9.571-9 10.609l-.996-2.151c2.433-.917 3.996-3.638 3.996-5.849h-3.983v-10h9.983z" />
+                </svg>
+                <p className="px-6 py-1 text-lg italic">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Voluptatibus quibusdam, eligendi exercitationem molestias
+                  possimus facere.
+                </p>
+              </div>
+              <span className="w-12 h-1 my-2 rounded-lg bg-themeOrange"></span>
+              <p>Jane Doe</p>
+            </div>
+            <div className="flex flex-col items-center mx-12 lg:mx-0 bg-themeLGreen p-5 rounded-2xl">
+              <div className="relative text-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="#FFB534"
+                  className="absolute top-0 left-0 w-8 h-8 text-gray-300 rotate-180"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M9.983 3v7.391c0 5.704-3.731 9.57-8.983 10.609l-.995-2.151c2.432-.917 3.995-3.638 3.995-5.849h-4v-10h9.983zm14.017 0v7.391c0 5.704-3.748 9.571-9 10.609l-.996-2.151c2.433-.917 3.996-3.638 3.996-5.849h-3.983v-10h9.983z" />
+                </svg>
+                <p className="px-6 py-1 text-lg italic">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Voluptatibus quibusdam, eligendi exercitationem molestias
+                  possimus facere.
+                </p>
+              </div>
+              <span className="w-12 h-1 my-2 rounded-lg bg-themeOrange"></span>
+              <p>Leroy Jenkins</p>
+            </div>
+            <div className="flex flex-col items-center mx-12 lg:mx-0 bg-themeLGreen p-5 rounded-2xl">
+              <div className="relative text-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="#FFB534"
+                  className="absolute top-0 left-0 w-8 h-8 text-gray-300 rotate-180"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M9.983 3v7.391c0 5.704-3.731 9.57-8.983 10.609l-.995-2.151c2.432-.917 3.995-3.638 3.995-5.849h-4v-10h9.983zm14.017 0v7.391c0 5.704-3.748 9.571-9 10.609l-.996-2.151c2.433-.917 3.996-3.638 3.996-5.849h-3.983v-10h9.983z" />
+                </svg>
+                <p className="px-6 py-1 text-lg italic">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Voluptatibus quibusdam, eligendi exercitationem molestias
+                  possimus facere.
+                </p>
+              </div>
+              <span className="w-12 h-1 my-2 rounded-lg bg-themeOrange"></span>
+              <p>Leroy Jenkins</p>
+            </div>
+          </Carousel>
+        </div>
+      </div>
+      {/* testimonials section ends*/}
     </>
   );
 };
