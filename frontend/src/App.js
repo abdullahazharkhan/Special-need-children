@@ -25,9 +25,9 @@ function App() {
           <Route path="/downsyndrome" element={<Downsyndrome />} />
           <Route path="/dyslexia" element={<Dyslexia />} />
           <Route path="/people" element={<People />}>
-            <Route path="experts" index element={<Board id="experts" />} />
+            {/* <Route path="experts" index element={<Board id="experts" />} />
             <Route path="aiTeam" element={<Board id="aiTeam" />} />
-            <Route path="devTeam" element={<Board id="devTeam" />} />
+            <Route path="devTeam" element={<Board id="devTeam" />} /> */}
           </Route>
           <Route path="/contact" element={<ContactUs />} />
         </Routes>
@@ -35,6 +35,6 @@ function App() {
       </BrowserRouter>
     </>
   );
-}
+} 
 
 export default App;
