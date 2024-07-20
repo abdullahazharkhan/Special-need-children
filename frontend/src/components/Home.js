@@ -122,48 +122,48 @@ const Home = () => {
             Achievers
           </span>
         </h1>
-        <div class="grid grid-cols-2 gap-4 mt-10 max-w-5xl mx-auto">
-          <div class="grid gap-3">
+        <div className="grid grid-cols-2 gap-4 mt-10 max-w-5xl mx-auto">
+          <div className="grid gap-3">
             <div>
               <img
-                class="h-auto max-w-full rounded-2xl"
+                className="h-auto max-w-full rounded-2xl"
                 src="https://www.childrensmn.org/assets/img/istock-1165345367-resize.png"
                 alt=""
               />
             </div>
             <div>
               <img
-                class="h-auto max-w-full rounded-2xl"
+                className="h-auto max-w-full rounded-2xl"
                 src="https://www.michiganallianceforfamilies.org/wp-content/uploads/2023/08/MAF-autism.png"
                 alt=""
               />
             </div>
             <div>
               <img
-                class="h-auto max-w-full rounded-2xl"
+                className="h-auto max-w-full rounded-2xl"
                 src="https://raisingchildren.net.au/__data/assets/image/0029/47738/adhd.jpg"
                 alt=""
               />
             </div>
           </div>
-          <div class="grid gap-3">
+          <div className="grid gap-3">
             <div>
               <img
-                class="h-auto max-w-full rounded-2xl"
+                className="h-auto max-w-full rounded-2xl"
                 src="https://stjudes.com.au/wp-content/uploads/2022/10/The-Strengths-of-A-Child-With-Autism.jpg"
                 alt=""
               />
             </div>
             <div>
               <img
-                class="h-auto max-w-full rounded-2xl"
+                className="h-auto max-w-full rounded-2xl"
                 src="https://www.michiganallianceforfamilies.org/wp-content/uploads/2023/08/MAF-autism.png"
                 alt=""
               />
             </div>
             <div>
               <img
-                class="h-auto max-w-full rounded-2xl"
+                className="h-auto max-w-full rounded-2xl"
                 src="https://orthopedicapplianceco.com/media/k2/items/cache/c889234799e865bbe90cee71f6cd2e53_XL.jpg"
                 alt=""
               />
