@@ -13,6 +13,7 @@ import {
 import "./App.css";
 import Footer from "./components/Footer";
 import Projects from "./components/Projects";
+import ProjectSpectrum from "./components/ProjectSpectrum";
 
 function App() {
   return (
@@ -31,7 +32,7 @@ function App() {
             <Route path="devTeam" element={<Board id="devTeam" />} /> */}
           </Route>
           <Route path="/contact" element={<ContactUs />} />
-          <Route path="/project-spectrum" element={<Projects />} />
+          <Route path="/project-spectrum" element={<ProjectSpectrum />} />
           <Route path="/projects" element={<Projects />} />
         </Routes>
         <Footer />
